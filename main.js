@@ -1,6 +1,6 @@
 const shareButton = document.querySelector(".share-button");
 const pcShareMenu = document.querySelector(".pc-share-menu");
-const defaultFooter = document.querySelector(".footer-default");
+const defaultFooter = document.querySelector(".default-footer");
 const activeFooter = document.querySelector(".active-footer");
 const backButton = document.querySelector(".back-button");
 
@@ -18,7 +18,6 @@ function resetStates() {
 // Handle share button click
 shareButton.addEventListener("click", () => {
   if (isDesktop()) {
-    console.log("desktop");
     pcShareMenu.classList.toggle("visible");
   } else {
     defaultFooter.classList.toggle("hidden");
