@@ -1,36 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article Preview Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <article class="article">
+        <figure class="article-image">
+          <img src="images/drawers.jpg" alt="Drawers in a room" width="327" />
+        </figure>
+        <section class="article-content">
+          <div class="article-text">
+            <h1 class="article-title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="article-description">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <footer class="article-footer">
+            <!-- Default Footer (Visible initially) -->
+            <div class="default-footer">
+              <div class="author">
+                <img
+                  class="author-avatar"
+                  src="images/avatar-michelle.jpg"
+                  alt="Michelle Appleton"
+                  width="40"
+                  height="40"
+                />
+                <div class="author-details">
+                  <h2 class="author-name">Michelle Appleton</h2>
+                  <time class="author-date" datetime="2020-06-28">
+                    28 Jun 2020
+                  </time>
+                </div>
+              </div>
+              <button class="share-button">
+                <img
+                  src="images/icon-share.svg"
+                  alt="Share"
+                  width="15"
+                  height="13"
+                />
+              </button>
+              <div class="pc-share-menu">
+                <span class="share-label">SHARE</span>
+                <img
+                  src="images/icon-facebook.svg"
+                  alt="facebook"
+                  width="20"
+                  height="20"
+                />
+                <img
+                  src="images/icon-twitter.svg"
+                  alt="twitter"
+                  width="20"
+                  height="20"
+                />
+                <img
+                  src="images/icon-pinterest.svg"
+                  alt="pinterest"
+                  width="20"
+                  height="20"
+                />
+              </div>
+            </div>
+            <!-- Active Footer (Visible after clicking share) -->
+            <div class="active-footer">
+              <div class="share-options">
+                <span class="share-label">SHARE</span>
+                <img
+                  src="images/icon-facebook.svg"
+                  alt="facebook"
+                  width="20"
+                  height="20"
+                />
+                <img
+                  src="images/icon-twitter.svg"
+                  alt="twitter"
+                  width="20"
+                  height="20"
+                />
+                <img
+                  src="images/icon-pinterest.svg"
+                  alt="pinterest"
+                  width="20"
+                  height="20"
+                />
+              </div>
+              <button class="back-button">
+                <img
+                  src="images/icon-share.svg"
+                  alt="Share"
+                  width="15"
+                  height="13"
+                />
+              </button>
+            </div>
+          </footer>
+        </section>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
