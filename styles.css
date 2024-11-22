@@ -130,11 +130,6 @@ button {
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
-    .pc-share-menu.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
     .pc-share-menu::after {
       content: "";
       position: absolute;
@@ -146,6 +141,11 @@ button {
       border-top: 10px solid #48556a;
     }
   }
+}
+
+.pc-share-menu.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .share-label {
